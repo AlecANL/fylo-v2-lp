@@ -1,0 +1,135 @@
+.about {
+  position: relative;
+  padding-inline: 1.5rem;
+  padding-block-end: 5.0625rem;
+  background-color: #f8f8fe;
+}
+.about::before {
+  position: absolute;
+  content: '';
+  display: block;
+  inline-size: 100%;
+  block-size: 50px;
+  inset-inline: 0;
+  inset-block-start: -50px;
+  background-size: cover;
+  background-image: url('../../assets/images/bg-curve-mobile.svg');
+  background-repeat: no-repeat;
+}
+.about-content {
+  text-align: center;
+}
+.about h2 {
+  font: var(--mobile-headlineBold2);
+}
+.about p {
+  font: var(--mobile-bodyRegular1);
+}
+.about blockquote p {
+  font: var(--mobile-smallRegular1);
+}
+.about-description p {
+  color: #615f7e;
+}
+.about-description h2 {
+  margin-block-end: 1.5rem;
+}
+.about-description {
+  margin-block-start: 5.4375rem;
+}
+.about-description a {
+  color: var(--just-cyan);
+  font-family: var(--openSansFont);
+  font-size: 0.75rem;
+  line-height: 1rem;
+  display: inline-flex;
+  gap: 0.5rem;
+  margin-block: 2.375rem;
+  border-block-end: 1px solid var(--just-cyan);
+}
+
+.quote {
+  padding-inline: 1.125rem;
+  padding-block: 1.125rem;
+  background-color: var(--just-white);
+  text-align: center;
+  border-radius: 0.25rem;
+  box-shadow: 0px 0px 8px 4px rgba(56, 56, 56, 0.0458843);
+}
+.quote-logo {
+  display: block;
+  text-align: start;
+}
+
+.avatar {
+  inline-size: 24px;
+  block-size: 24px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user {
+  display: flex;
+  gap: 0.5rem;
+  margin-block-start: 0.75rem;
+}
+.username {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.username strong {
+  font-size: 0.5rem;
+}
+.username small {
+  font-size: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .about::before {
+    background-image: url('../../assets/images/bg-curve-desktop.svg');
+    inset-block-start: -60px;
+    block-size: 100px;
+  }
+  .about h2 {
+    font: var(--desktop-headlineBold2);
+  }
+  .about p {
+    font: var(--desktop-bodyRegular1);
+  }
+  .about blockquote p {
+    font: var(--desktop-smallRegular1);
+  }
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'description cover';
+    gap: 2rem;
+  }
+  .about-description {
+    grid-area: description;
+    align-self: center;
+    text-align: start;
+  }
+  .about-cover {
+    grid-area: cover;
+    align-self: center;
+  }
+  .quote {
+    max-inline-size: 356px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-content {
+    gap: 6.25rem;
+  }
+  .avatar {
+    inline-size: 2rem;
+    block-size: 2rem;
+  }
+  .username strong {
+    font-size: 0.7rem;
+  }
+  .username small {
+    font-size: 0.6rem;
+  }
+}

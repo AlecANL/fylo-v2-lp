@@ -1,0 +1,9 @@
+input[type='email'] {
+  padding-block: 0.875rem;
+  padding-inline: 1.25rem;
+  border-width: 0.63px;
+  border-color: #07043b;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+  font-family: var(--ralewayFont);
+  border-radius: 0.25rem;
+}

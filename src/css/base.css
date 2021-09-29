@@ -1,0 +1,67 @@
+:root {
+  --just-white: #fff;
+  --just-blue: hsl(224, 93%, 58%);
+  --just-cyan: hsl(170, 45%, 43%);
+  --just-purple: hsl(238, 22%, 44%);
+  --dark-blue: hsl(243, 87%, 12%);
+  --openSansFont: 'Open Sans', sans-serif;
+  --ralewayFont: 'Raleway', sans-serif;
+  --mobile-linkRegular1: 400 0.75rem / 0.75rem var(--ralewayFont);
+  --mobile-linkRegular2: 400 1rem / 1.3125rem var(--openSansFont);
+  --mobile-bodyRegular1: 400 0.875rem / 1.3125rem var(--openSansFont);
+  --mobile-headlineBold1: bold 1.5rem / 2.25rem var(--ralewayFont);
+  --mobile-headlineBold2: bold 1rem / 1.5rem var(--ralewayFont);
+  --mobile-headlineBold3: bold 1.125rem / 1.5rem var(--ralewayFont);
+  --mobile-buttonBold: bold 0.875rem / 1rem var(--ralewayFont);
+  --mobile-smallRegular1: 400 0.625rem / 1.125rem var(--openSansFont);
+  --desktop-linkRegular1: 400 1rem / 1.125rem var(--ralewayFont);
+  --desktop-linkRegular2: 400 1rem / 1.3125rem var(--openSansFont);
+  --desktop-bodyRegular1: 400 1rem / 1.5rem var(--openSansFont);
+  --desktop-headlineBold1: bold 2.5rem / 3.75rem var(--ralewayFont);
+  --desktop-headlineBold2: bold 2.5rem / 2.875rem var(--ralewayFont);
+  --desktop-headlineBold3: 2rem / 3rem var(--ralewayFont);
+  --desktop-buttonBold: bold 0.875rem / 1rem var(--ralewayFont);
+  --desktop-smallRegular1: 400 0.8125rem / 1.4375rem var(--openSansFont);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: var(--openSansFont);
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-inline-size: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: var(--ralewayFont);
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  max-inline-size: 1280px;
+  margin: auto;
+}

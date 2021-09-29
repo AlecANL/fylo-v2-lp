@@ -1,0 +1,21 @@
+.btn {
+  padding-block: 0.75rem;
+  padding-inline: 2rem;
+  text-transform: capitalize;
+  border-color: transparent;
+  border-radius: 0.25rem;
+  font: var(--mobile-buttonBold);
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+  cursor: pointer;
+}
+.is-blue {
+  background-color: var(--just-blue);
+  color: var(--just-white);
+  transition: all 0.2s ease-in-out;
+}
+.is-blue:hover {
+  background-color: #6c9bff;
+}
+.btn:active {
+  transform: scale(0.98);
+}

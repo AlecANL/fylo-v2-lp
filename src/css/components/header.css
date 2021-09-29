@@ -1,0 +1,18 @@
+@import './nav.css';
+
+.header {
+  padding-inline: 1.5rem;
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 9999;
+  background-color: var(--just-white);
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  inline-size: 80px;
+  block-size: 24px;
+}

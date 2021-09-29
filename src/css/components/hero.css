@@ -1,0 +1,80 @@
+.hero {
+  padding-inline: 1.5rem;
+  padding-block: 4.6875rem 5.625rem;
+}
+.hero-content {
+  text-align: center;
+}
+.hero h1 {
+  font: var(--mobile-headlineBold1);
+  margin-block-start: 40px;
+}
+.hero p {
+  font: var(--mobile-bodyRegular1);
+  margin-block: 1.5rem 2rem;
+}
+.hero-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.hero-form.is-error span {
+  display: block;
+}
+.hero-form.is-error input {
+  border-color: red;
+}
+.form-group,
+input {
+  inline-size: 100%;
+}
+.hero-form span {
+  display: block;
+  font-size: 0.8rem;
+  color: red;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    grid-template-areas: 'description cover';
+  }
+  .hero-cover {
+    grid-area: cover;
+    align-self: center;
+  }
+  .hero-description {
+    grid-area: description;
+    text-align: start;
+    align-self: center;
+  }
+  .hero h1 {
+    font: var(--desktop-headlineBold1);
+  }
+  .hero p {
+    font: var(--desktop-bodyRegular1);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-content {
+    gap: 3.4375rem;
+  }
+  .hero-form {
+    flex-direction: row;
+    align-items: center;
+  }
+  .hero-form button {
+    flex-shrink: 0;
+    align-self: flex-start;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .hero {
+    padding-block: 7rem 10.25rem;
+  }
+}
