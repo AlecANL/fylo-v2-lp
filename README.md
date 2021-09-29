@@ -23,8 +23,8 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [repo](https://your-solution-url.com)
-- Live Site URL: [live demo](https://your-live-site-url.com)
+- Solution URL: [repo](https://github.com/AlecANL/fylo-v2-lp)
+- Live Site URL: [live demo](https://alecanl.github.io/fylo-v2-lp/)
 
 ## My process
 
